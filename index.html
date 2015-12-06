@@ -4,11 +4,58 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
     <title ></title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel='stylesheet' href='styles/main.css'>
 </head>
 <body>
-    <div class="jumbotron"><h1>Hello, Wrold!</h1></div>
+
+  <div class="container">
+    <h1>To Do List</h1>
+    <p>Hitting 'enter' key in the input field OR clicking the 'Add Item' button should console.log the value in the input field</p>
+  </div>
+
+    <div class="container">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Add Item">
+      </div>
+
+      <div class="input-group">
+        <input type="submit" class="form-control" value="Add Item" />
+      </div>
+
+      <div class="input-group">
+        <span data-id="1" class="js-page-1 page-active">1</span>
+        <span data-id="2" class="js-page-2">2</span>
+        <span data-id="3" class="js-page-3">3</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="input-group">
+        <input type="submit" class="form-control js-prev" value="Previous" />
+      </div>
+      <div class="input-group">
+        <input type="submit" class="form-control js-next" value="Next" />
+      </div>
+      <div class="js-slick">
+        <div class="slick-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Panda_Cub_from_Wolong,_Sichuan,_China.JPG">
+        </div>
+        <div class="slick-item">
+          <img src="http://www.cutepandapictures.com/wp-content/uploads/2013/09/cutepandapicturefamily.jpg">
+        </div>
+        <div class="slick-item">
+          <img src="http://www-scf.usc.edu/~samantcd/itp104/adult05.jpg">
+        </div>
+      </div>
+    </div>
+
+
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <!-- slick js -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
     <script src='javascript/main.js'></script>
 </body>
